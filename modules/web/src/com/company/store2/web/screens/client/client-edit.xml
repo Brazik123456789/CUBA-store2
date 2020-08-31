@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://clientEdit.caption"
+        focusComponent="form"
+        messagesPack="com.company.store2.web.screens.client">
+    <data>
+        <instance id="clientDc"
+                  class="com.company.store2.entity.Client">
+            <view extends="_local"/>
+            <loader/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="clientDc">
+            <column width="350px">
+                <textField id="fullNameField" property="fullName"/>
+                <textField id="phoneField" property="phone"/>
+                <textField id="emailField" property="email"/>
+                <textField id="saleField" property="sale"/>
+            </column>
+        </form>
+        <hbox id="editActions" spacing="true">
+            <button action="windowCommitAndClose"/>
+            <button action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

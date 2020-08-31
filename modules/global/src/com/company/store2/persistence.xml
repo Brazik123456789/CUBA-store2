@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="store2" transaction-type="RESOURCE_LOCAL">
+
+        <class>com.company.store2.entity.Product</class>
+        <class>com.company.store2.entity.Client</class>
+        <class>com.company.store2.entity.Order</class>
+        <class>com.company.store2.entity.OrderPosition</class>
+    </persistence-unit>
+</persistence>
